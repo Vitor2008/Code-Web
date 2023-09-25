@@ -570,9 +570,20 @@ footer{
     .footer{
         padding: 2rem 3%;
     }
+
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 812px){
+
+    
+
+    .footer .social-media a{
+        margin-right: -5%;
+    }
+}
+
+@media (max-width: 800px) {
 
     .nav_logo-img{
         width: 50%;
