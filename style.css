@@ -445,9 +445,8 @@ footer{
 
 .footer-logo img{
     cursor: pointer;
-    width: 250px;
+    width: 200px;
 }
-
 
 
 .social-media h2{
@@ -679,10 +678,11 @@ footer{
 
     .footer-info{
         margin-top: 10%;
+        flex-direction: column;
     }
 
-    .footer-info{
-        flex-direction: column;
+    .footer-logo{
+        padding-bottom: 25px!important;
     }
 
     .footer-logo,
@@ -692,8 +692,8 @@ footer{
     }
 
     .footer .social-media a{
-        margin-left: -16%;
-        margin-top: 8%;
+        margin-left: -25%!important;
+        margin-top: 15%!important;
     }
 
 
