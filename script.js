@@ -54,7 +54,7 @@ ScrollReveal().reveal('.home-content p, .about-content, .footer-info .social-med
 
 /*=========typed js ==============*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Power the Solution'],
+    strings: ['Code Web'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
