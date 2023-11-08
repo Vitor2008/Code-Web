@@ -180,7 +180,7 @@ span{
 
 .heading{
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 
 .about-content h2{
@@ -584,6 +584,11 @@ footer{
 }
 
 @media (max-width: 800px) {
+
+    .col-one{
+        padding-left: 35px!important;
+        padding-right: 35px!important;
+    }
 
     .nav_logo-img{
         width: 50%;
