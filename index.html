@@ -25,12 +25,13 @@
 
     <i class='bx bx-menu' id="menu-icon"></i>
 
-    <nav class="navbar">
+    <nav class="navbar col-one">
         <a href="#home" class="active">Home</a>
         <a href="#sobre">Sobre</a>
         <a href="#serviços">Serviços</a>
         <a href="#portfolio">Portfólio</a>
-        <a href="#contato">Contato</a>
+        <a href="#perguntasFrequentes">FAQ</a>
+        <a href="#contato" class="btn">Contato</a>
     </nav>
 </header>
 
@@ -156,9 +157,115 @@
     </div>
 </section>
 
+
+ <!--------------------------Perguntas Frequentes-------------------------->
+ <section class="perguntas" id="perguntasFrequentes">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h3 class="heading col-one wow fadeInUp">
+                    <b>Perguntas </b><b><span>Frequentes</span></b>
+                </h3>
+
+                <div class="faq-perguntas">
+                    <div class="faq">
+                        <div class="question">
+                            <h2>Qual a diferença entre um site simples e uma loja virtual?</h2>
+
+                            <svg width="15" height="10" viewBox="0 0 42 25">
+                                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                            </svg>
+
+                        </div>
+                        <div class="answer">
+                            <p>
+                                Um site simples geralmente oferece informações sobre uma empresa ou pessoa, 
+                                enquanto uma loja virtual permite a venda de produtos ou serviços online, 
+                                com funcionalidades como carrinho de compras integrado com o WhatsApp do estabelecimento.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="question">
+                            <h2>Quanto tempo leva para desenvolver um site ou uma loja virtual?</h2>
+
+                            <svg width="15" height="10" viewBox="0 0 42 25">
+                                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                            </svg>
+
+                        </div>
+                        <div class="answer">
+                            <p>
+                                O tempo de desenvolvimento varia conforme a complexidade do projeto. 
+                                Sites simples podem levar alguns dias, enquanto lojas virtuais mais 
+                                complexas podem demandar uma ou duas semanas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="question">
+                            <h2>A <span>Code Web</span> oferece serviços de manutenção após o lançamento do site?</h2>
+
+                            <svg width="15" height="10" viewBox="0 0 42 25">
+                                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                            </svg>
+
+                        </div>
+                        <div class="answer">
+                            <p>
+                                Sim, oferecemos serviços de manutenção contínua, incluindo atualizações de conteúdo, 
+                                correções de bugs, backups regulares e suporte técnico para garantir o bom 
+                                funcionamento do seu site ou loja virtual.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="question">
+                            <h2>Meu site vai aparecer nos mecanismos de busca da internet, como o Google?
+                            </h2>
+
+                            <svg width="15" height="10" viewBox="0 0 42 25">
+                                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                            </svg>
+
+                        </div>
+                        <div class="answer">
+                            <p>
+                                Sim, os sites são indexados pelos mecanismos de busca como o Google, Bing e outros. 
+                                Garantindo assim que qualquer pessoa consiga acessar seu Web Site.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="question">
+                            <h2>Quais são as formas de pagamento aceitas para serviços de desenvolvimento web?</h2>
+
+                            <svg width="15" height="10" viewBox="0 0 42 25">
+                                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                            </svg>
+
+                        </div>
+                        <div class="answer">
+                            <p>
+                                Aceitamos uma variedade de métodos de pagamento, 
+                                incluindo Pix, cartões de crédito/débito
+                                e outras soluções de pagamento online seguras.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!--contact section design-->
 <section class="contact col-one" id="contato">
-  <div class="contact-container">
+ <div class="contact-container">
     <div class="contact-div">
         <h2 class="heading">Entre em <span>Contato!</span></h2>
         <h1>Temos a solução ideal para o seu negócio, entre em contato conosco e faça seu orçamento!</h1>
@@ -174,7 +281,7 @@
             <input type="email" name="email" placeholder="E-mail" autocomplete="off" required>
         </div>
         <div class="input-box">
-            <input type="number" placeholder="Número do Celular" autocomplete="off" required>
+            <input type="text" name="phone" placeholder="Número do Celular" autocomplete="off" required>
             <input type="text" placeholder="Assunto do e-mail" autocomplete="off" required>
         </div>
         <textarea name="message" cols="30" rows="10" placeholder="Sua Mensagem" autocomplete="off" required></textarea>

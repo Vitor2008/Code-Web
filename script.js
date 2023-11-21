@@ -46,7 +46,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .footer-logo', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .footer-logo, .faq-perguntas', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img, .contact-div, .footer-text', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content, .footer-info .social-media, .footer-iconTop', { origin: 'right' });
 
@@ -80,3 +80,12 @@ links.forEach(function(link) {
     });
 });
 
+
+// Campo perguntas frequentes
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach((faq) => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    });
+});

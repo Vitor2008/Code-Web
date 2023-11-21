@@ -69,6 +69,15 @@ section{
     margin-left: 4rem;
 }
 
+.navbar .btn{
+    color: var(--second-bg-color);
+}
+
+.navbar .btn.active{
+    color: var(--text-color);
+}
+
+
 .navbar a:hover,
 .navbar a.active{
     color: var(--main-color);
@@ -166,6 +175,10 @@ span{
     box-shadow: none;
 }
 
+.navbar .btn:hover{
+    color: var(--text-color);
+}
+
 .about{
     display: flex;
     justify-content: center;
@@ -238,8 +251,10 @@ span{
     margin: 1rem 0 3rem;
 }
 
+
 .portfolio{
     background: var(--second-bg-color);
+    padding-bottom: 100px;
 }
 
 .portfolio h2{
@@ -329,6 +344,91 @@ span{
 }
 
 
+
+/*================== Perguntas ====================== */
+.perguntas {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: var(--bg-color)
+}
+
+.perguntas h3 {
+    color: var(--text-color);
+    padding-bottom: 50px;
+}
+
+.faq-perguntas{
+    width: 100%!important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq{
+    color: var(--text-color);
+    max-width: 70%;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--main-color);
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h2{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 15px;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.faq.active .answer{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active svg{
+    transform: rotate(180deg);
+}
+
+svg{
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.contact {
+    background-color: var(--second-bg-color);
+}
+
 .contact .heading {
     margin-bottom: 3rem;
     text-align: left;
@@ -404,9 +504,10 @@ span{
     padding: 0.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
+    box-shadow: rgb(34, 57, 82) 0px 20px 30px -10px;
 }
 
 .contact form .input-box input {
@@ -424,7 +525,7 @@ span{
 
 
 footer{
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-content{
@@ -576,8 +677,6 @@ footer{
 
 @media (max-width: 812px){
 
-    
-
     .footer .social-media a{
         margin-right: -5%;
     }
@@ -602,12 +701,17 @@ footer{
         position: absolute;
         top: 100%;
         left: 0;
+        text-align: left;
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
         border-top: .1rem solid rgb(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .2);
         display: none;
+    }
+
+    .navbar a{
+        width: 50%;
     }
 
     .navbar.active{
@@ -658,6 +762,13 @@ footer{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .faq h2{
+        font-size: 15px;
+    }
+
+    .faq p{
+        font-size: 12px;
+    }
 
     .contact-container {
         flex-direction: column;
