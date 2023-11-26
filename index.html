@@ -1,333 +1,560 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <title>Code Web - Soluções Tecnológicas</title>
+    <title>Code Web - Soluções Tech</title>
 
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsivo.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
-</body>
 
-<header class="header col-one">
+<body>
 
-    <a href="index.html" class="nav_logo">
-        <img src="logo nova copia.png" alt="" class="nav_logo-img">
+    <a class="botao-whatsapp animated fadeInUp" href="https://api.whatsapp.com/send?phone=65984794759" id="btnWhatsApp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
-    
-
-    <i class='bx bx-menu' id="menu-icon"></i>
-
-    <nav class="navbar col-one">
-        <a href="#home" class="active">Home</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#serviços">Serviços</a>
-        <a href="#portfolio">Portfólio</a>
-        <a href="#perguntasFrequentes">FAQ</a>
-        <a href="#contato" class="btn">Contato</a>
-    </nav>
-</header>
-
-
-<!--section home-->
-<section class="home col-one" id="home">
-    <div class="home-content">
-        <h3>Olá,</h3>
-        <h1>Seja bem vindo</h1>
-        <h3>a <span class="multiple-text"></span></h3>
-        <p>Se você busca um parceiro confiável para impulsionar o crescimento do seu negócio, está no lugar certo. Entre em contato conosco e vamos juntos construir uma presença digital poderosa que deixará uma marca duradoura no mundo virtual.</p>
-        <div class="social-media">
-            <a href="https://www.instagram.com/power_the_solution/"><i class='bx bxl-instagram' ></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100083215782387"><i class='bx bxl-facebook'></i></a>
-            <a href="https://api.whatsapp.com/send?phone=65984794759"><i class='bx bxl-whatsapp' ></i></a>
+    <!--------------------------Header-------------------------->
+    <section class="header" id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one">
+                <a class="navbar-brand animated fadeInLeft" href="#">
+                    <img src="./img/logo.png" width="160" class="img-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto mr-auto animated fadeIn">
+                        <li class="nav-item animated fadeIn">
+                            <a href="#banner" class="nav-link active""><b>Home</b></a>
+                        </li>
+                        <li class="nav-item nav-item animated fadeIn">
+                            <a href="#sobre" class="nav-link"><b>Sobre</b></a>
+                        </li>
+                        <li class="nav-item nav-item animated fadeIn">
+                            <a href="#servicos" class="nav-link"><b>Serviços</b></a>
+                        </li>
+                        <li class="nav-item nav-item animated fadeIn">
+                            <a href="#portfolio" class="nav-link"><b>Portfólio</b></a>
+                        </li>
+                        <li class="nav-item nav-item animated fadeIn">
+                            <a href="#perguntasFrequentes" class="nav-link"><b>FAQ</b></a>
+                        </li>
+                    </ul>
+                    <a href="#contato" class="btn animated fadeInRight">
+                        <span>Contato</span>
+                    </a>
+                </div>
+            </nav>
         </div>
-        <a href="#contato" class="btn">Fazer Orçamento</a>
-    </div>
-
-    <div class="home-img">
-        <img src="capa.png" alt="">
-    </div>
-</section>
-
-<!--about section design-->
-<Section class="about col-one" id="sobre">
-    <div class="about-img">
-        <img src="capa-dois.png" alt="">
-    </div>
-
-    <div class="about-content">
-        <h2 class="heading">Sobre a <span>Code Web</span></h2><br>
-        <h3>Desenvolvimento Web</h3>
-        <p>Somos uma equipe apaixonada por tecnologia e inovação, especializada no desenvolvimento web que tem como principal missão transformar suas ideias em soluções digitais de sucesso. Seja para criar um site incrível, ou impulsionar sua presença online. Estamos aqui para tornar sua visão em realidade!</p>
-    </div>
-</Section>
-
-<!--Services section design-->
-
-<section class="services col-one" id="serviços">
-    <h2 class="heading">Nossos <span>Serviços</span></h2>
-
-    <div class="services-container">
-        <div class="services-box">
-            <i class='bx bx-code-alt'></i>
-            <h3>Desenvolvimento Web</h3>
-            <p>Criação de sites, aplicações e outras soluções digitais para a internet. Combinando habilidades técnicas, desvendando o equilíbrio perfeito entre estética e funcionalidade.</p>
-        </div>
-        
-        <div class="services-box">
-            <i class='bx bxs-store'></i>
-            <h3>Loja Online</h3>
-            <p>Levar sua empresa para internet, te proporciona um alcance expandido, economia de custos e oportunidades de personalização que podem impulsionar o sucesso do negócio.</p>
-        </div>
-
-        <div class="services-box">
-            <i class='bx bxs-cog'></i>
-            <h3>Manutenção Contínua</h3>
-            <p>Manutenções continuas garante que um Website se mantenha atualizado, garantindo que tudo funcione de forma eficiente, segura e de acordo com as necessidades da aplicação.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
 
-<!--portfolio section design-->
-<section class="portfolio col-one" id="portfolio">
-    <h2 class="heading">Conheça Nossos <span>Projetos</span> </h2>
-
-    <div class="portfolio-container">
-        <div class="portfolio-box">
-            <img src="portfolio img/1.png" alt="">
-            <div class="portfolio-layer">
-                <h4>Academia</h4>
-                <p>Web site dinâmico e inspirador, onde cada clique é um passo em direção a uma vida mais saudável e ativa.</p>
-                <a href="https://peaceful-croquembouche-1f2945.netlify.app/">Visitar<i class='bx bx-link-external'></i></a>
+    <!--------------------------Banner-------------------------->
+    <section class="banner" id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-md-12 col-sm-12 col-one banner-content">
+                    <h3 class="wow fadeInLeft">Olá,</h3>
+                    <h1 class="wow fadeInLeft">Seja bem vindo</h1>
+                    <h3 class="wow fadeInLeft">a <span class="multiple-text color-span"></span></h3>
+                    <p class="wow fadeInLeft delay-02s">Se você busca um parceiro confiável para impulsionar o crescimento do seu negócio, 
+                       está no lugar certo. Entre em contato conosco e vamos juntos construir uma presença 
+                       digital poderosa que deixará uma marca duradoura no mundo virtual.</p>
+                    <div class="social-media wow fadeInUp delay-04s">
+                        <a href="https://www.instagram.com/code_web_tech/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61554245180084" target="_blank"><i class="fab fa-facebook"></i></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=65984794759" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <a href="#contato" class="btn wow fadeInUp delay-04s"><span>Fazer Orçamento</span></a>
+                </div>
+            
+                <div class="col-12 col-lg-6 col-md-12 col-sm-12 banner-img wow fadeInRight delay-03s">
+                    <img src="img/capa.png" alt="desenvolvimento web">
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="portfolio-box">
-            <img src="portfolio img/2.png" alt="">
-            <div class="portfolio-layer">
-                <h4>Mentoria Fitness</h4>
-                <p>Site de vendas que motiva os visitantes a embarcar em uma jornada transformadora rumo à saúde e bem-estar.</p>
-                <a href="https://phenomenal-caramel-060e8e.netlify.app/">Visitar<i class='bx bx-link-external'></i></a>
+
+    <!--------------------------Sobre-------------------------->
+    <section class="sobre" id="sobre">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-md-12 col-sm-12 col-one sobre-img wow fadeInLeft">
+                    <img src="./img/capa-dois.png" alt="">
+                </div>
+            
+                <div class="col-12 col-lg-6 col-md-12 col-sm-12 col-one sobre-content">
+                    <h2 class="heading wow fadeIn">Sobre a <span>Code Web</span></h2><br>
+                    <h3 class="heading wow fadeInUp">Desenvolvimento Web</h3>
+                    <p class="wow fadeInUp">
+                        Somos uma equipe apaixonada por tecnologia e inovação, especializada 
+                        no desenvolvimento web que tem como principal missão transformar suas 
+                        ideias em soluções digitais de sucesso. Seja para criar um site incrível, ou 
+                        impulsionar sua presença online. Estamos aqui para tornar sua visão em realidade!
+                    </p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="portfolio-box">
-            <img src="portfolio img/3.png" alt="">
-            <div class="portfolio-layer">
-                <h4>Loja Virtual</h4>
-                <p>Interface de usuário amigável que permite aos visitantes navegar por uma variedade de produtos.</p>
-                <a href="https://starlit-chebakia-62376a.netlify.app/">Visitar<i class='bx bx-link-external'></i></a>
+
+    <!--------------------------Serviços-------------------------->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-one text-center mb-5 wow fadeIn">
+                    <h1 class="heading wow fadeIn">
+                        <b>Nossos </b><b><Span>Serviços</Span></b>
+                    </h1>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-12 col-sm-12 col-one mb-5 wow fadeInUp">
+                    <div class="card-icon text-center">
+                        <img src="./img/servicos-img-1.png" width="230" />
+                    </div>
+                    <div class="card-text text-center mt-3">
+                        <span><b>Desenvolvimento de Web</b></span>
+                        <p class="mt-2">
+                            Criação de sites, aplicações e outras soluções digitais para a internet. 
+                            Combinando habilidades técnicas, desvendando o equilíbrio perfeito entre 
+                            estética e funcionalidade.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-12 col-sm-12 col-one mb-5 wow fadeInUp">
+                    <div class="card-icon text-center">
+                        <img src="./img/servicos-img-2.png" width="230" />
+                    </div>
+                    <div class="card-text text-center mt-3">
+                        <span><b>Loja Online</b></span>
+                        <p class="mt-2">
+                            Levar sua empresa para internet, te proporciona um alcance expandido, 
+                            economia de custos e oportunidades de personalização que podem impulsionar
+                            o sucesso do negócio.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-12 col-sm-12 col-one mb-5 wow fadeInUp">
+                    <div class="card-icon text-center">
+                        <img src="./img/servicos-img-3.png" width="230" />
+                    </div>
+                    <div class="card-text text-center mt-3">
+                        <span><b>Manutenção Contínua</b></span>
+                        <p class="mt-2">
+                            Manutenções continuas garante que um Website se mantenha atualizado, 
+                            garantindo que tudo funcione de forma eficiente, segura e de acordo 
+                            com as necessidades da aplicação.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="portfolio-box">
-            <img src="portfolio img/4.png" alt="">
-            <div class="portfolio-layer">
-                <h4>Curso Online</h4>
-                <p>Curso de programação full stack, que traduz a empolgação do mundo da tecnologia em cada pixel.</p>
-                <a href="https://potencializeasolucao.netlify.app/">Visitar<i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-
-        <div class="portfolio-box">
-            <img src="portfolio img/5.png" alt="">
-            <div class="portfolio-layer">
-                <h4>Restaurante</h4>
-                <p>Web site de um restaurante que convida os visitantes a vivenciarem uma experiência gastronômica única.</p>
-                <a href="https://foodrestaurante.netlify.app/">Visitar<i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-
-        <div class="portfolio-box">
-            <img src="portfolio img/6.png" alt="">
-            <div class="portfolio-layer">
-                <h4>Cardápio Online</h4>
-                <p>Possibilidade de realizar pedidos com facilidade, tudo a partir do conforto do seu dispositivo.</p>
-                <a href="https://cardapioonlinefoods.netlify.app/">Visitar<i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 
- <!--------------------------Perguntas Frequentes-------------------------->
- <section class="perguntas" id="perguntasFrequentes">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center mb-5">
-                <h3 class="heading col-one wow fadeInUp">
-                    <b>Perguntas </b><b><span>Frequentes</span></b>
-                </h3>
+    <!--------------------------Portfolio-------------------------->
+    <section class="portfolio" id="portfolio">
 
-                <div class="faq-perguntas">
-                    <div class="faq">
-                        <div class="question">
-                            <h2>Qual a diferença entre um site simples e uma loja virtual?</h2>
+        <div class="container">
+            <div class="row">
 
-                            <svg width="15" height="10" viewBox="0 0 42 25">
-                                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
-                            </svg>
+                <div class="col-12 col-one text-center mb-5 wow fadeIn">
+                    <h1 class="heading wow fadeIn">
+                        <b>Conheça Nossos </b><b><Span>Projetos</Span></b>
+                    </h1>
+                </div>
 
-                        </div>
-                        <div class="answer">
-                            <p>
-                                Um site simples geralmente oferece informações sobre uma empresa ou pessoa, 
-                                enquanto uma loja virtual permite a venda de produtos ou serviços online, 
-                                com funcionalidades como carrinho de compras integrado com o WhatsApp do estabelecimento.
-                            </p>
+                <div class="portfolio-container col-one">
+
+                    <div class="portfolio-box wow fadeInUp">
+                        <img src="img/portfolio img/1.png" alt="Loja Virtual">
+                        <div class="portfolio-layer">
+                            <h4><span>Loja Virtual</span></h4>
+                            <p>Interface de usuário amigável que permite aos visitantes navegar por uma variedade de produtos.</p>
+                            <a target="_blank" href="https://starlit-chebakia-62376a.netlify.app/">Visitar<i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
 
-                    <div class="faq">
-                        <div class="question">
-                            <h2>Quanto tempo leva para desenvolver um site ou uma loja virtual?</h2>
-
-                            <svg width="15" height="10" viewBox="0 0 42 25">
-                                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
-                            </svg>
-
-                        </div>
-                        <div class="answer">
-                            <p>
-                                O tempo de desenvolvimento varia conforme a complexidade do projeto. 
-                                Sites simples podem levar alguns dias, enquanto lojas virtuais mais 
-                                complexas podem demandar uma ou duas semanas.
-                            </p>
+                    <div class="portfolio-box wow fadeInUp">
+                        <img src="img/portfolio img/2.png" alt="Loja Virtual">
+                        <div class="portfolio-layer">
+                            <h4><span>Cardápio Online</span></h4>
+                            <p>Possibilidade de realizar pedidos com facilidade, tudo a partir do conforto do seu dispositivo.</p>
+                            <a target="_blank" href="https://cardapioonlinefoods.netlify.app/">Visitar<i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
 
-                    <div class="faq">
-                        <div class="question">
-                            <h2>A <span>Code Web</span> oferece serviços de manutenção após o lançamento do site?</h2>
-
-                            <svg width="15" height="10" viewBox="0 0 42 25">
-                                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
-                            </svg>
-
-                        </div>
-                        <div class="answer">
-                            <p>
-                                Sim, oferecemos serviços de manutenção contínua, incluindo atualizações de conteúdo, 
-                                correções de bugs, backups regulares e suporte técnico para garantir o bom 
-                                funcionamento do seu site ou loja virtual.
-                            </p>
+                    <div class="portfolio-box wow fadeInUp">
+                        <img src="img/portfolio img/3.png" alt="Loja Virtual">
+                        <div class="portfolio-layer">
+                            <h4><span>Restaurante</span></h4>
+                            <p>Site de um restaurante que convida os visitantes a vivenciarem uma experiência gastronômica única.</p>
+                            <a target="_blank" href="https://foodrestaurante.netlify.app/">Visitar<i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
 
-                    <div class="faq">
-                        <div class="question">
-                            <h2>Meu site vai aparecer nos mecanismos de busca da internet, como o Google?
-                            </h2>
-
-                            <svg width="15" height="10" viewBox="0 0 42 25">
-                                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
-                            </svg>
-
-                        </div>
-                        <div class="answer">
-                            <p>
-                                Sim, os sites são indexados pelos mecanismos de busca como o Google, Bing e outros. 
-                                Garantindo assim que qualquer pessoa consiga acessar seu Web Site.
-                            </p>
+                    <div class="portfolio-box wow fadeInUp">
+                        <img src="img/portfolio img/4.png" alt="Loja Virtual">
+                        <div class="portfolio-layer">
+                            <h4><span>Express Delivery</span></h4>
+                            <p>Site de vendas parceiro, para um sistema web criado com foco em Delivery.</p>
+                            <a target="_blank" href="https://expressdeliveryweb.netlify.app/">Visitar<i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
 
-                    <div class="faq">
-                        <div class="question">
-                            <h2>Quais são as formas de pagamento aceitas para serviços de desenvolvimento web?</h2>
-
-                            <svg width="15" height="10" viewBox="0 0 42 25">
-                                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
-                            </svg>
-
+                    <div class="portfolio-box wow fadeInUp">
+                        <img src="img/portfolio img/5.png" alt="Loja Virtual">
+                        <div class="portfolio-layer">
+                            <h4><span>Use Lavie</span></h4>
+                            <p>Loja virtual com um sistema de carrinho, em que o pedido chega diretamente no WhatsApp da loja.</p>
+                            <a target="_blank" href="https://uselavie.netlify.app/">Visitar<i class="fas fa-external-link-alt"></i></a>
                         </div>
-                        <div class="answer">
-                            <p>
-                                Aceitamos uma variedade de métodos de pagamento, 
-                                incluindo Pix, cartões de crédito/débito
-                                e outras soluções de pagamento online seguras.
-                            </p>
+                    </div>
+
+                    <div class="portfolio-box wow fadeInUp">
+                        <img src="img/portfolio img/6.png" alt="Loja Virtual">
+                        <div class="portfolio-layer">
+                            <h4><span>Mentoria Fitness</span></h4>
+                            <p>Site de vendas que motiva os visitantes a embarcar em uma jornada transformadora rumo à saúde e bem-estar.</p>
+                            <a target="_blank" href="https://phenomenal-caramel-060e8e.netlify.app/">Visitar<i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box wow fadeInUp">
+                        <img src="img/portfolio img/7.png" alt="Loja Virtual">
+                        <div class="portfolio-layer">
+                            <h4><span>Curso Online</span></h4>
+                            <p>Curso de programação full stack, que traduz a empolgação do mundo da tecnologia em cada pixel.</p>
+                            <a target="_blank" href="https://potencializeasolucao.netlify.app/">Visitar<i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box wow fadeInUp">
+                        <img src="img/portfolio img/8.png" alt="Loja Virtual">
+                        <div class="portfolio-layer">
+                            <h4><span>Start Chat</span></h4>
+                            <p>Simplificando o contato com apenas um clique! Esse site permite iniciar uma conversa no WhatsApp sem a necessidade de salvar contatos.</p>
+                            <a target="_blank" href="https://whatssemsalvarcontato.netlify.app/">Visitar<i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box wow fadeInUp">
+                        <img src="img/portfolio img/9.png" alt="Loja Virtual">
+                        <div class="portfolio-layer">
+                            <h4><span>Academia</span></h4>
+                            <p>Web site dinâmico e inspirador, onde cada clique é um passo em direção a uma vida mais saudável e ativa.</p>
+                            <a target="_blank" href="https://peaceful-croquembouche-1f2945.netlify.app/">Visitar<i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                </div>   
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------------------Perguntas Frequentes-------------------------->
+    <section class="perguntas" id="perguntasFrequentes">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-one text-center mb-5">
+                    <h1 class="heading wow fadeInUp">
+                        <b>Perguntas </b><b><span>Frequentes</span></b>
+                    </h1>
+
+                    <div class="faq-perguntas wow fadeInUp delay-03s">
+                        <div class="faq">
+                            <div class="question">
+                                <h3>Qual a diferença entre um site simples e uma loja virtual?</h3>
+
+                                <svg width="15" height="10" viewBox="0 0 42 25">
+                                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                                </svg>
+
+                            </div>
+                            <div class="answer">
+                                <p>
+                                    Um site simples geralmente oferece informações sobre uma empresa ou pessoa, 
+                                    enquanto uma loja virtual permite a venda de produtos ou serviços online, com 
+                                    funcionalidades como carrinho de compras integrado com o WhatsApp do estabelecimento.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq">
+                            <div class="question">
+                                <h3>Quanto tempo leva para desenvolver um site ou uma loja virtual?
+                                </h3>
+
+                                <svg width="15" height="10" viewBox="0 0 42 25">
+                                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                                </svg>
+
+                            </div>
+                            <div class="answer">
+                                <p>
+                                    O tempo de desenvolvimento varia conforme a complexidade do projeto. Sites simples 
+                                    podem levar alguns dias, enquanto lojas virtuais mais complexas podem demandar uma ou duas semanas.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq">
+                            <div class="question">
+                                <h3>A Code Web oferece serviços de manutenção após o lançamento do site?</h3>
+
+                                <svg width="15" height="10" viewBox="0 0 42 25">
+                                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                                </svg>
+
+                            </div>
+                            <div class="answer">
+                                <p>
+                                    Sim, oferecemos serviços de manutenção contínua, incluindo atualizações de conteúdo, 
+                                    correções de bugs, backups regulares e suporte técnico para garantir o bom 
+                                    funcionamento do seu site ou loja virtual.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq">
+                            <div class="question">
+                                <h3>Meu site vai aparecer nos mecanismos de busca da internet, como o Google?
+                                </h3>
+
+                                <svg width="15" height="10" viewBox="0 0 42 25">
+                                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                                </svg>
+
+                            </div>
+                            <div class="answer">
+                                <p>Sim, os sites são indexados pelos mecanismos de busca como o Google, Bing e outros. 
+                                    Garantindo assim que qualquer pessoa consiga acessar seu Web Site.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq">
+                            <div class="question">
+                                <h3>Quais são as formas de pagamento aceitas para serviços de desenvolvimento web?</h3>
+
+                                <svg width="15" height="10" viewBox="0 0 42 25">
+                                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                                </svg>
+
+                            </div>
+                            <div class="answer">
+                                <p>
+                                    Aceitamos uma variedade de métodos de pagamento, 
+                                    incluindo Pix, cartões de crédito/débito e outras soluções de 
+                                    pagamento online seguras.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!--contact section design-->
-<section class="contact col-one" id="contato">
- <div class="contact-container">
-    <div class="contact-div">
-        <h2 class="heading">Entre em <span>Contato!</span></h2>
-        <h1>Temos a solução ideal para o seu negócio, entre em contato conosco e faça seu orçamento!</h1>
-        <div class="icons">
-            <a href="https://api.whatsapp.com/send/?phone=5565984794759&text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+site+e+gostaria+de+realizar+um+or%C3%A7amento%21&type=phone_number&app_absent=0">(65) 98479-4759 <i class='bx bxl-whatsapp'></i></a>
-            <a href="https://criarmeulink.com.br/u/1697408723">codeweb2023@gmail.com<i class='bx bxs-envelope'></i></a>
+
+    <!--------------------------contato-------------------------->
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-7 col-md-12 col-sm-12">
+                    <div class="texto-contato col-one">
+                        <h1 class="heading wow fadeInLeft">
+                            <b>Entre em <b><Span>Contato</Span></b></b>
+                        </h1>
+                        <p class="mt-4 wow fadeInLeft">Expanda seu alcance, aprimore seus serviços,
+                            temos a solução ideal para o seu negócio!
+                        </p>
+
+                        <a href="https://api.whatsapp.com/send?phone=65984794759" class="btn whatsapp mt-3 wow fadeInUp delay-04s" target="_blank">
+                            <span>(65) 98479-4759 <i class="fab fa-whatsapp"></i></span>
+                        </a>
+
+                        <a href="https://criarmeulink.com.br/u/1697408723" class="btn gmail mt-4 wow fadeInUp delay-04s" target="_blank">
+                            <span>codeweb2023@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5 col-md-12 col-sm-12">
+                    <div class="form-contato wow fadeInRight">
+                        <form action="https://api.staticforms.xyz/submit" method="post">
+
+                            <label>Nome:</label>
+                            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                            
+                            <label>WhatsApp:</label>
+                            <input type="text" name="phone" placeholder="Telefone" autocomplete="off" required>
+
+                            <label>Mensagem:</label>
+                            <textarea name="message" cols="30" rows="10" placeholder="Digite sua Mensagem"
+                                autocomplete="off" required></textarea>
+                            <button class="btn enviar" type="submit"><span>Enviar</span></button>
+
+                            <input type="hidden" name="accessKey" value="62f4c9db-a698-493e-a0b2-ee6944def654">
+                            <input type="hidden" name="redirectTo"
+                                value="http://127.0.0.1:5500/Code%20Web%202.0/obrigado.html">
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-    </div>
+    </section>
 
-    <form action="https://api.staticforms.xyz/submit" method="post">
-        <div class="input-box">
-            <input type="text" name="nome" placeholder="Seu Nome" autocomplete="off" required>
-            <input type="email" name="email" placeholder="E-mail" autocomplete="off" required>
+    <!--------------------------End-------------------------->
+    <section class="end">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-one text-center mb-5 wow fadeIn">
+                    <h1 class="heading">
+                        <b>Fortaleça  sua presença na </b><b><Span>Internet</Span></b>
+                    </h1>
+                </div>
+
+                <div class="col-12 col-lg-6 col-md-12 col-sm-12 col-one">
+
+                    <div class="d-flex text-end">
+                        <p class="wow fadeInLeft delay-02s">
+                            Expanda seu alcance, conecte-se ao mundo
+                            <br><br>
+                            Leve sua empresa para a internet com facilidade através de
+                            websites e lojas virtuais personalizadas, potencializando sua
+                            presença digital e conquistando novos horizontes para seus negócios.
+                        </p>
+                        <div class="wow fadeInUp delay-05s">
+                            <a href="#contato" class="btn mt-4 mr-3">
+                               <span>Fazer Orçamento</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-one">
+                    <div class="d-flex img-banner wow fadeIn delay-05s">
+                        <img src="./img/end-img-2.png" />
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="input-box">
-            <input type="text" name="phone" placeholder="Número do Celular" autocomplete="off" required>
-            <input type="text" placeholder="Assunto do e-mail" autocomplete="off" required>
+    </section>
+
+
+    <!--------------------------Footer-------------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-7 col-md-12 col-sm-12 col-one wow fadeInLeft">
+                    <a href="index.html" class="footer_logo">
+                        <img src="img/logo.png" alt="" class="footer_logo-img">
+                    </a>
+
+                    <p class="footer_description">
+                        Transformando sonhos em realidade digital. 
+                        Desenvolvimento de websites para impulsionar seu sucesso online. 
+                    </p>
+
+                    <br>
+                    <h3 class="footer_title">Redes Sociais</h3>
+
+                    <div class="redes_sociais">
+                        <a href="https://www.facebook.com/profile.php?id=61554245180084" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/code_web_tech/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5 col-md-12 col-sm-12 function-card col-one wow fadeInRight">
+                    <h3 class="footer_title">Informações de Contato</h3>
+                    <div class="mb-5">
+
+                        <div class="reservation_card">
+                            <span class="reservation_icon-wrapper">
+                                <img src="img/envelope.svg" alt="" class="reservation_icon">
+                            </span>
+
+                            <div>
+                                <h3 class="reservation_card-title">E-mail</h3>
+                                <span class="reservation_card-data">expressdelivery@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="reservation_card">
+                            <span class="reservation_icon-wrapper">
+                                <img src="img/mobile.svg" alt="" class="reservation_icon">
+                            </span>
+
+                            <div>
+                                <h3 class="reservation_card-title">WhatsApp</h3>
+                                <span class="reservation_card-data">65 98479-4759</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <textarea name="message" cols="30" rows="10" placeholder="Sua Mensagem" autocomplete="off" required></textarea>
-        <button class="btn" type="submit">Enviar Mensagem</button>
+    </footer>
 
-        <input type="hidden" name="accessKey" value="62f4c9db-a698-493e-a0b2-ee6944def654">
-        <input type="hidden" name="redirectTo" value="https://obrigadopts.netlify.app/">
-    </form>
-  </div>
-</section>
+    <section class="footer-end">
+        <div class="container">
+            <div class="row">
 
-<!--footer design-->
-<footer>
-  <div class="footer col-one">
-    <div class="footer-info">
-        <div class="footer-logo">
-            <a href="index.html" class="nav_logo">
-                <img src="logo nova copia.png" alt="" class="nav_logo-img">
-            </a>
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-one footer-text wow fadeIn">
+                    <p class="mb-0">
+                        Copyright &copy; 2023 by Code Web  - Todos os Direitos Reservados
+                    </p>
+                </div>
+
+                <div class=" col-12 col-lg-6 col-md-6 col-sm-12 col-one footer-iconTop wow fadeIn">
+                    <a href="#banner"><i class="fas fa-arrow-up"></i>
+                 </div>
+                
+            </div>
         </div>
-    <div class="social-media">
-        <h2>Redes <span> Sociais</span></h2>
-        <a href="https://www.instagram.com/power_the_solution/"><i class='bx bxl-instagram' ></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100083215782387"><i class='bx bxl-facebook'></i></a>
-    </div>
-    
-  </div>
-<hr class="line">
-  <div class="footer-content">
-     <div class="footer-text">
-        <p>Copyright &copy; 2023 by Code Web - Todos os Direitos Reservados</p>
-     </div>
-     <div class="footer-iconTop">
-        <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
-     </div>
-  </div>
-  </div>
-</footer>
+    </section>
 
-<!--scroll reveal-->
-<script src="https://unpkg.com/scrollreveal"></script>
 
-<!--typed js-->
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!--typed js-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-<script src="script.js"></script>
-<script src="https://kit.fontawesome.com/2463c70382.js" crossorigin="anônimo"></script>
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./js/modernizr-3.5.0.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/wow.min.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script>new WOW().init();</script>
 </body>
+
 </html>

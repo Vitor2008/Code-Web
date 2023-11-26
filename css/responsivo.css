@@ -1,0 +1,404 @@
+/* Desktop (col-lg) 992px+ */
+@media (min-width: 992px) {
+
+}
+
+/* Desktop e Tablets (col-md) 768px a 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .col-one {
+        padding-left: 35px!important;
+        padding-right: 35px!important;
+    }
+
+    .header{
+        line-height: 50px;
+    }
+
+    .navbar-brand img{
+        width: 180px !important;
+    }
+
+    .navbar-toggler-icon {
+        padding-top: 5px;
+    }
+
+    .navbar-toggler-icon i{
+        color: var(--text-color);
+    }
+
+    .navbar-collapse {
+        text-align: center;
+        border-radius: 40px;
+        background-color: var(--bg-color);
+    }
+
+    .banner-img img{
+        width: 70vw;
+        margin-top: 60px;
+    }
+
+    .sobre-img {
+        order: 1; /* Retorna à ordem original para telas menores */
+      }
+
+    .sobre-img img{
+        width: 70vw;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+
+
+    .portfolio-box h4{
+        font-size: 30px;
+    }
+
+    .perguntas .question{
+        text-align: left;
+    }
+
+    .contato .texto-contato{
+        margin: 0!important;
+        margin-bottom: 80px!important;
+     }
+
+     .contato .heading{
+        margin-bottom: 40px!important;
+     }
+
+     .contato p{
+        font-size: 20px!important;
+        margin-bottom: 35px!important;
+     }
+
+
+     .form-contato {
+        margin: 0!important; /* Remove qualquer margem */
+        width: 100% !important; /* Ocupa toda a largura disponível */
+        
+    }
+
+    .end .img-banner{
+        padding-top: 20px;
+    }
+
+    .end .img-banner img{
+        width: 70vw;
+        margin-left: 0;
+    }
+    
+
+    .end .heading{
+        margin-bottom: 0!important;
+    }
+
+    .footer .footer_logo img{
+        width: 200px;
+    }
+
+    .footer .footer_title{
+        font-size: 20px;
+        padding-top: 50px;
+     }
+  
+  
+     .reservation_icon{
+        width: 20px;
+     }
+  
+     .reservation_icon-wrapper{
+        width: 45px;
+        height: 45px;
+     }
+    
+     .footer-text{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+     }
+
+     .footer-iconTop{
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+     }
+
+
+}
+
+
+/* Tablets (col-sm) 576px a 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+
+/* Tablets e Celulares (col) 0px a 767px */
+@media (max-width: 767px) {
+
+    .col-one {
+        padding-left: 35px!important;
+        padding-right: 35px!important;
+    }
+
+
+    .header{
+        line-height: 50px;
+    }
+
+    .navbar-brand img{
+        width: 180px !important;
+    }
+
+    .navbar-toggler-icon {
+        padding-top: 5px;
+    }
+
+    .navbar-toggler-icon i{
+        color: var(--text-color);
+    }
+
+    .navbar-collapse {
+        text-align: center;
+        border-radius: 40px;
+        background-color: var(--bg-color);
+    }
+
+    
+    .banner {
+        padding-top: 130px;
+        padding-bottom: 50px;
+    }
+    
+
+    .banner-content h3{
+        font-size: 25px;
+    }
+
+    .banner-content h1{
+        font-size: 30px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+    .banner .btn{
+        font-size: 18px;
+        width: 235px;
+    }
+
+    .banner .btn span::before{
+        width: 215px;
+    }
+
+    .banner-img img{
+        width: 90vw;
+        margin-top: 60px;
+    }
+
+
+    .sobre{
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+
+    .sobre-img {
+        order: 1; /* Retorna à ordem original para telas menores */
+      }
+
+    .sobre-img img{
+        width: 70vw;
+    }
+
+    .heading{
+        font-size: 27px;
+    }
+
+    .sobre h3{
+        font-size: 25px;
+    }
+
+    .sobre p{
+        font-size: 18px;
+    }
+
+    .servicos .card-text span{
+        font-size: 21px;
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr!important;
+    }
+
+    .portfolio-box h4{
+        font-size: 30px;
+    }
+
+    .perguntas{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .perguntas .question{
+        text-align: left;
+    }
+
+    .contato {
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+
+    .contato .texto-contato{
+        margin: 0!important;
+        margin-bottom: 80px!important;
+     }
+
+     .contato .heading{
+        margin-bottom: 40px!important;
+     }
+
+     .contato p{
+        font-size: 20px!important;
+        margin-bottom: 35px!important;
+     }
+
+     .contato .btn{
+        font-size: 18px;
+        padding: .2rem 2rem;
+     }
+
+     .contato .btn.gmail{
+        padding: .5rem 3.8rem;
+     }
+
+     .contato .btn.gmail span::before{
+        width: 305px;
+     }
+
+     .form-contato {
+        margin: 0!important; /* Remove qualquer margem */
+        width: 500px !important; /* Ocupa toda a largura disponível */
+        
+    }
+
+    .contato .enviar{
+       width: 200px;
+       left: 35px;
+    }
+
+    .contato .enviar span{
+        right: 30px;
+    }
+
+    .contato .enviar span::before{
+        width: 170px;
+    }
+
+    .end .img-banner{
+        padding-top: 20px;
+    }
+
+    .end .img-banner img{
+        width: 350px;
+        margin-left: 0;
+    }
+    
+
+    .end .heading{
+        margin-bottom: 0!important;
+    }
+
+    .end p{
+        font-size: 20px!important;
+    }
+
+    .footer .footer_logo img{
+        width: 200px;
+    }
+
+    .footer .footer_title{
+        font-size: 20px;
+        padding-top: 50px;
+     }
+  
+  
+     .reservation_icon{
+        width: 20px;
+     }
+  
+     .reservation_icon-wrapper{
+        width: 45px;
+        height: 45px;
+     }
+    
+     .footer-text{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+     }
+
+     .footer-iconTop{
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+     }
+    
+}
+
+
+
+/* Celulares menores (col) 0px a 325px */
+@media (max-width: 376px) {
+
+    .navbar-brand img{
+        width: 130px!important;
+    }
+
+    .answer p{
+        font-size: 15px;
+    }
+
+    .contato .btn{
+        font-size: 15px;
+        padding: .1rem .8rem;
+     }
+
+     .contato .btn.gmail{
+        padding: .1rem 2.2rem;
+     }
+
+     .contato .btn.whatsapp span::before{
+        width: 210px;
+     }
+
+     .contato .btn.gmail span::before{
+        width: 260px;
+     }
+
+     .form-contato{
+        width: 450px!important;
+     }
+
+     .contato .enviar{
+        width: 150px;
+        left: 40px;
+     }
+ 
+     .contato .enviar span{
+         right: 38px;
+     }
+ 
+     .contato .enviar span::before{
+         width: 130px;
+     }
+
+     .end .img-banner img{
+        width: 300px;
+    }
+
+
+}
