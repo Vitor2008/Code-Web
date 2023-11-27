@@ -138,6 +138,10 @@
 /* Tablets e Celulares (col) 0px a 767px */
 @media (max-width: 767px) {
 
+    body{
+        overflow-x: hidden;
+    }
+
     .col-one {
         padding-left: 35px!important;
         padding-right: 35px!important;
